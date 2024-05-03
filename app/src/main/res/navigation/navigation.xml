@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation.xml"
+    app:startDestination="@id/list_screen">
+    <fragment
+        app:moduleName="listing"
+        android:id="@+id/list_screen"
+        android:name="com.eitadevelopment.listing.ListingScreenFragment"
+        android:label="@string/app_name" />
+    <fragment
+        app:moduleName="details"
+        android:id="@+id/details_screen"
+        android:name="com.eitadevelopment.details.DetailsScreenFragment"
+        android:label="@string/app_name" >
+        <deepLink app:uri="@string/details_screen"/>
+    </fragment>
+
+</navigation>
